@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     ################## My apps #########################
     'rmsapp.apps.RmsappConfig',
     'customuser.apps.CustomuserConfig',
+    ########################## Additional Apps###################################
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [
@@ -126,3 +128,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ############################## Custom User and Authentication ###############################################
 
 AUTH_USER_MODEL = 'customuser.User'
+LOGOUT_REDIRECT_URL='login'
+LOGIN_REDIRECT_URL='index'
