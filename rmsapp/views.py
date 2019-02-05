@@ -9,4 +9,4 @@ from django.contrib.auth.decorators import login_required,user_passes_test
 def index(request):
     #latest_question_list = 0
     #context = {'latest_question_list': latest_question_list}
-    return render(request, 'rms/index.html')
+    return render(request, 'rms/base.html')
